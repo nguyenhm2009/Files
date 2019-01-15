@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Feature list</h1>
+
+  <table class="table table-hover" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Feature Name</th>
+        <th>Feature Description</th>
+        <th>Feature Dimension</th>
+        <th>Target Functions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let feature of features">
+        <td>{{feature.name}}</td>
+        <td>{{feature.description}}</td>
+        <td>{{feature.dimension}}</td>
+        <td>{{feature.targetFunctions}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
